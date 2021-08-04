@@ -5,13 +5,86 @@
           box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  border-radius: 10px;
+  margin: 50px 0;
+  overflow: hidden;
+}
+
+.card {
+  padding: 30px 50px 60px;
+}
+
+.card h1 {
+  margin: 40px 0;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.card p {
+  line-height: 25px;
+  margin: 0 0 40px 0;
+}
+
+.card a {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 25px;
+  border: 2px solid white;
+  border-radius: 35px;
+  text-transform: capitalize;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.card.orange {
+  background-color: #e38826;
+}
+
+.card.orange a {
+  color: #e38826;
+}
+
+.card.dark-cyan {
+  background-color: #006970;
+}
+
+.card.dark-cyan a {
+  color: #006970;
+}
+
+.card.very-dark-cyan {
+  background-color: #004241;
+}
+
+.card.very-dark-cyan a {
+  color: #004241;
+}
+
+.card.orange > a:hover, .card.orange > a:focus,
+.card.card.dark-cyan > a:hover, .dar.card.dark-cyan > a:focus,
+.card.card.very-dark-cyan > a:hover, .card.very-dark-cyan.orange > a:focus {
+  background-color: transparent;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

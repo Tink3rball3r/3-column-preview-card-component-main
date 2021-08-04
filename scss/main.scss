@@ -13,17 +13,95 @@ $secondary-font: 'Big Shoulders Display', cursive;
     padding: 0;
     box-sizing: border-box;
 }
+// global styles
 
-a{
-    text-decoration: none;
-    
-}
 
 
 
 body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
     font-family: $main-font;
     font-weight: 400;
+    color: white;
 
+}
+
+.container{
+    width: 90%;
+    border-radius: 10px;
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+
+.card{
+    padding: 30px 50px 60px;
+
+
+    h1{
+        margin: 40px 0;
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+    p{
+        line-height: 25px;
+        margin: 0 0 40px 0;
+    }
+
+    a{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 25px;
+    border: 2px solid white;
+    border-radius: 35px;
+    text-transform: capitalize;
+    transition: background-color 0.3s linear;
+    
+}
+}
+
+.card.orange{
+    background-color: $dark-orange;
+
+    a{
+        color: $dark-orange;;
+    }
+}
+
+
+.card.dark-cyan{
+    background-color: $dark-cyan;
+    
+    a{
+        color: $dark-cyan;
+    }
+
+   
+}
+
+.card.very-dark-cyan{
+    background-color: $very-dark-cyan;
+
+    a{
+        color: $very-dark-cyan;
+    }
+}
+
+// a:hover, a:focus{
+//     background-color: transparent;
+//     color: white;
+// }
+
+.card.orange > a:hover,.card.orange > a:focus,
+.card.card.dark-cyan > a:hover,.dar.card.dark-cyan > a:focus,
+.card.card.very-dark-cyan > a:hover,.card.very-dark-cyan.orange > a:focus {
+    background-color: transparent;
+    color: white;
 }

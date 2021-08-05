@@ -19,7 +19,7 @@ $secondary-font: 'Big Shoulders Display', cursive;
 
 
 body{
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +32,7 @@ body{
 
 .container{
     width: 90%;
+    max-width: 800px;
     border-radius: 10px;
     margin: 50px 0;
     overflow: hidden;
@@ -43,7 +44,7 @@ body{
 
 
     h1{
-        margin: 40px 0;
+        margin: 20px 0;
         font-family: $secondary-font;
         font-weight: 700;
         font-size: 40px;
@@ -82,8 +83,6 @@ body{
     a{
         color: $dark-cyan;
     }
-
-   
 }
 
 .card.very-dark-cyan{
@@ -94,14 +93,27 @@ body{
     }
 }
 
-// a:hover, a:focus{
-//     background-color: transparent;
-//     color: white;
-// }
 
 .card.orange > a:hover,.card.orange > a:focus,
 .card.card.dark-cyan > a:hover,.dar.card.dark-cyan > a:focus,
 .card.card.very-dark-cyan > a:hover,.card.very-dark-cyan.orange > a:focus {
     background-color: transparent;
     color: white;
+}
+
+@media (min-width: 599px )  {
+    body{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1280px ){
+    .container{
+        display: flex;
+    }
+
+    .card{
+        padding: 20px 50px 60px;
+        
+    }
 }

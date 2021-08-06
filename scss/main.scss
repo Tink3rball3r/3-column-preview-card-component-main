@@ -1,119 +1,107 @@
-$dark-orange:hsl(31, 77%, 52%);
+$dark-orange: hsl(31, 77%, 52%);
 $dark-cyan: hsl(184, 100%, 22%);
 $very-dark-cyan: hsl(179, 100%, 13%);
-$paragraph:hsla(0, 0%, 100%, 0.75);
+$paragraph: hsla(0, 0%, 100%, 0.75);
 $background: hsl(0, 0%, 95%);
 $main-font: 'Lexend Deca', sans-serif;
 $secondary-font: 'Big Shoulders Display', cursive;
 
-
 // resets
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 // global styles
 
-
-
-
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    font-family: $main-font;
-    font-weight: 400;
-    color: white;
-
+body {
+	font-size: 15px;
+	font-family: $main-font;
+	font-weight: 400;
+	color: white;
 }
 
-.container{
-    width: 90%;
-    max-width: 800px;
-    border-radius: 10px;
-    margin: 50px 0;
-    overflow: hidden;
+.container {
+	width: 90%;
+	max-width: 800px;
+	border-radius: 10px;
+	margin: 100px auto;
+	overflow: hidden;
 }
 
+.card {
+	padding: 30px 50px 60px;
 
-.card{
-    padding: 30px 50px 60px;
+	h1 {
+		margin: 20px 0;
+		font-family: $secondary-font;
+		font-weight: 700;
+		font-size: 40px;
+		text-transform: uppercase;
+	}
 
+	p {
+		line-height: 25px;
+		margin: 0 0 40px 0;
+	}
 
-    h1{
-        margin: 20px 0;
-        font-family: $secondary-font;
-        font-weight: 700;
-        font-size: 40px;
-        text-transform: uppercase;
-    }
-
-    p{
-        line-height: 25px;
-        margin: 0 0 40px 0;
-    }
-
-    a{
-    text-decoration: none;
-    background-color: white;
-    padding: 10px 25px;
-    border: 2px solid white;
-    border-radius: 35px;
-    text-transform: capitalize;
-    transition: background-color 0.3s linear;
-    
-}
+	a {
+		text-decoration: none;
+		background-color: white;
+		padding: 10px 25px;
+		border: 2px solid white;
+		border-radius: 35px;
+		text-transform: capitalize;
+		transition: background-color 0.3s linear;
+	}
 }
 
-.card.orange{
-    background-color: $dark-orange;
+.card.orange {
+	background-color: $dark-orange;
 
-    a{
-        color: $dark-orange;;
-    }
+	a {
+		color: $dark-orange;
+	}
 }
 
+.card.dark-cyan {
+	background-color: $dark-cyan;
 
-.card.dark-cyan{
-    background-color: $dark-cyan;
-    
-    a{
-        color: $dark-cyan;
-    }
+	a {
+		color: $dark-cyan;
+	}
 }
 
-.card.very-dark-cyan{
-    background-color: $very-dark-cyan;
+.card.very-dark-cyan {
+	background-color: $very-dark-cyan;
 
-    a{
-        color: $very-dark-cyan;
-    }
+	a {
+		color: $very-dark-cyan;
+	}
 }
 
-
-.card.orange > a:hover,.card.orange > a:focus,
-.card.card.dark-cyan > a:hover,.dar.card.dark-cyan > a:focus,
-.card.card.very-dark-cyan > a:hover,.card.very-dark-cyan.orange > a:focus {
-    background-color: transparent;
-    color: white;
+.card.orange > a:hover,
+.card.orange > a:focus,
+.card.card.dark-cyan > a:hover,
+.dar.card.dark-cyan > a:focus,
+.card.card.very-dark-cyan > a:hover,
+.card.very-dark-cyan.orange > a:focus {
+	background-color: transparent;
+	color: white;
 }
 
-@media (min-width: 599px )  {
-    body{
-        font-size: 15px;
-    }
+@media (min-width: 599px) {
+	body {
+		font-size: 15px;
+	}
 }
 
-@media (min-width: 1280px ){
-    .container{
-        display: flex;
-    }
+@media (min-width: 1280px) {
+	.container {
+		display: flex;
+	}
 
-    .card{
-        padding: 20px 50px 60px;
-        
-    }
+	.card {
+		padding: 20px 50px 60px;
+	}
 }

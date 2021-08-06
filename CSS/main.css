@@ -6,16 +6,6 @@
 }
 
 body {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
@@ -26,7 +16,7 @@ body {
   width: 90%;
   max-width: 800px;
   border-radius: 10px;
-  margin: 50px 0;
+  margin: 100px auto;
   overflow: hidden;
 }
 
@@ -82,9 +72,12 @@ body {
   color: #004241;
 }
 
-.card.orange > a:hover, .card.orange > a:focus,
-.card.card.dark-cyan > a:hover, .dar.card.dark-cyan > a:focus,
-.card.card.very-dark-cyan > a:hover, .card.very-dark-cyan.orange > a:focus {
+.card.orange > a:hover,
+.card.orange > a:focus,
+.card.card.dark-cyan > a:hover,
+.dar.card.dark-cyan > a:focus,
+.card.card.very-dark-cyan > a:hover,
+.card.very-dark-cyan.orange > a:focus {
   background-color: transparent;
   color: white;
 }

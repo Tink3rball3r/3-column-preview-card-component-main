@@ -89,8 +89,8 @@ main {
 }
 .card {
 	width: 90%;
-	height: 29rem;
-	padding: 3rem 3rem 2rem 3rem;
+	/* height: 29rem; */
+	padding: 3rem 3rem 4rem 3rem;
 }
 
 .card.orange {
@@ -146,7 +146,7 @@ main {
 		align-items: center;
 	}
 	.card {
-		padding: 0;
+		padding: 0 0 4rem 0;
 	}
 
 	.card img {
@@ -177,7 +177,7 @@ main {
 
 	.card .cta {
 		width: 60%;
-		margin: 2rem 0 0 2rem;
+		margin: 4rem 0 0 2rem;
 	}
 }
 .card .cta:hover {
